@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Uni;
+    src: url(uni05_53.ttf)
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(Outfit-Variable.ttf)
+}
+
+body {
+    overflow: hidden;
+    font-family: Outfit;
+    background-image:url(bg\ grid.png);
+    background-position: center;
+    background-size: cover;
+}
+
+body a {
+    color: #B0530B;
+}
+
+body a:hover {
+    color: #DC7C33;
+}
+p,h1,h2 {
+    padding-bottom: 16px;
+}
+
+h1,h2,h3 {
+    font-family: Uni;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-radius: 16px 16px 0px 0px;
+    padding: 2%;
+    background-color: white;
+}
+
+nav a {
+    color: #B0530B;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#mobile {
+    display: inline;
+}
+
+#container {
+    margin:5% 8%;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 450px;
+    background-color: white;
+}
+#flexMobile {
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+}
+aside {
+    float: left;
+    width: 520px;
+    border-right: 2px solid black;
+    padding: 30px 16px 50px 20px;
+    overflow-y: scroll;
+}
+
+aside img {
+    width: 150px;
+    height: 150px;
+}
+#main {
+    padding: 16px;
+}
+
+footer {
+    border-radius: 0px 0px 16px 16px;
+    border-top: 2px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #DC7C33; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: #B0530B; 
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        border-radius: 5%;
+        margin: 4%;
+        height: 40%;
+    }
+    nav {
+        border-radius: 18px 18px 0px 0px;
+    }
+    nav a {
+        padding: 2%;
+    }
+    #mobile {
+        display: none;
+    }
+    #flexMobile {
+        height: 300px;
+        }
+    aside {
+        width: 35%;
+        border-right: none;
+        overflow-x: hidden;
+    }
+    #paddingAside {
+        padding: 15px 0px 0px 10px;
+    }
+
+    #main {
+        width: 65%;
+        height: 292px;
+        padding: 8px 8px 0px 8px;
+        border-left: 2px solid black;
+        overflow-y: scroll;
+    }
+    footer {
+        border-radius: 0px 0px 18px 18px;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+}
